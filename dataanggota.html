@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data Anggota</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- bagian script -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(img/logo1.png); background-repeat: no-repeat; background-position: center; background-color: darkgray; background-size: 500px;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto text-white ">
+					<li class="nav-item dropdown ">
+						<a class="nav-link  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							File
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown ">
+						<a class="nav-link  text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Data
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="dataanggota.html">Data Anggota</a>
+							<a class="dropdown-item" href="FormKoleksiBuku.html">Data Buku</a>
+							<a class="dropdown-item" href="formpinjam.html">Data Peminjaman</a>
+							<a class="dropdown-item" href="formpengembalian.html">Data Pengembalian</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+		<h3 class="text-center mt-4 mb-3"><b>DATA ANGGOTA PUSTAKAWAN</b></h3>
+	
+	<div class="container ">
+		<div class="row" >
+		<div class="col-sm-12" >
+			<form>
+			<div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">ID Anggota</label>
+            <div class="col-sm-5">
+             <input type="text" class="form-control" id="inputText">
+            </div>
+            </div>
+			<div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">NIS</label>
+            <div class="col-sm-5">
+             <input type="text" class="form-control" id="text">
+            </div>
+            </div>
+            <div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <div class="form-check form-check-inline ml-3">
+  				<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+ 			 	<label class="form-check-label" for="inlineRadio1">Laki Laki</label>
+			</div>
+			<div class="form-check form-check-inline">
+ 				 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+ 				 <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+			</div>
+			</div>
+		
+		</div>	
+	</div>
+			<div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">Semester</label>
+        		<select class="form-control col-sm-1 ml-3">
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+					 <option>5</option>
+				</select>
+				<div class="col-sm-1">
+             <input type="text" class="form-control" id="txt">
+            </div>
+		    </div>
+		    <div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">Jurusan</label>
+        		<select class="form-control col-sm-1 ml-3">
+					 <option>SI</option>
+					 <option>SK</option>
+					 <option>MK</option>
+					 <option>TK</option>
+				</select>
+				<div class="col-sm-3">
+             <input type="text" class="form-control" id="txt">
+            </div>
+		    </div>
+		    <div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">Kelas</label>
+        		<select class="form-control col-sm-1 ml-3">
+					 <option>A</option>
+					 <option>B</option>
+					 <option>C</option>
+					 <option>D</option>
+					 <option>E</option>
+					 <option>F</option>
+					 <option>G</option>
+					 <option>H</option>
+				</select>
+		    </div>
+		    <div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">No Hp</label>
+            <div class="col-sm-5">
+             <input type="No Hp" class="form-control" id="No_Hp">
+            </div>
+            </div>
+            <div class="mb-3 row">
+            <label for="text" class="col-sm-2 col-form-label">STATUS</label>
+        		<select class="form-control col-sm-1 ml-3">
+					 <option>AKTIF</option>
+					 <option>TIDAK AKTIF</option>
+				</select>
+		    </div>
+		    </form>
+		</div>
+		<!-- Batas Form -->
+		    <!-- Butoon -->
+		    <div class=" row mt-5 ml-3">
+		    <a href="pustakawan.html">
+		    <button type="button" class="btn btn-primary btn-outline-danger text-white" style="width: 100px;">Close</button></a>
+			<button type="button" class="btn btn-primary btn-outline-danger text-white ml-5" style="width: 100px;">Input</button>
+			<button type="button" class="btn btn-primary btn-outline-danger text-white ml-5" style="width: 100px;">Edit</button>
+			<button type="button" class="btn btn-primary btn-outline-danger text-white ml-5" style="width: 100px;">Delate</button>
+			</div>
+
+	<!-- Table -->		
+	<div class="col-sm-12 mt-5">
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th>ID Anggota</th>
+				<th>Nis</th>
+				<th>Nama Anggota</th>
+				<th>Jenis Kelamin</th>
+				<th>Semester</th>
+				<th>Jurusan</th>
+				<th>Kelas</th>
+				<th>No Hp</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+				<td>20220370</td>
+				<td>1234567897</td>
+				<td>Syahdani Wahyu</td>
+				<td class="text-center">Laki Laki</td>
+				<td class="text-center">3</td>
+				<td>Sistem Informasi</td>
+				<td class="text-center">E</td>
+				<td>082383955437</td>
+				<td>Mahasisswa</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	</div>
+	
+
+
+</body>
+</html>
